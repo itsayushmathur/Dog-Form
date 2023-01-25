@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Virtual Pet</title>
+    <link rel="stylesheet" type="text/css" href="styke.css">
+
+</head>
+
+<body>
+
+    <div class="card" >
+        <div class="tools">
+            <div class="circle">
+                <a href="pet.html"><span class="red box"></span></a>
+            </div>
+            <div class="circle">
+                <a href="pet.html"><span class="yellow box"></span></a>
+            </div>
+            <div class="circle">
+                <a href="pet.html"> <span class="green box"></span></a>
+            </div>
+        </div>
+
+        <div class="card__content" style="text-align: center; color: aliceblue; font-weight: bold; opacity: 1;">
+            <div>
+                <p>
+                    <img src="normaldog.png" id="imgClickAndChange">
+                </p>
+                <h1 id="hi1">Hi, I'm Enzo. Click on me to Pet me.</h1>
+                <h1 id="hi2" style="display: none;">Hi,<p style="display: inline;" id="name"> </p> Welcome to My
+                    Playground.<br>Click on me again.
+                </h1>
+                <h1 id="sad" style="display: none;" >Where did you go???</h1>
+                
+                <h1 id="hi3" style="display: none;">Thank you for the pets Mr.<p id="name2" style="display: inline;">
+                    </p>. <br>Woof Woof. Please Proceed to the below form to order from our pawlicious bakery.</h1>
+                <div id="payment" style="display: none;">
+                    <form>
+                        <label>Name:</label><br>
+                        <input type="text" id="name" required placeholder="Enter your name">
+
+                        <br><label>Number of cake donuts:</label><br>
+                        <input type="text" id="cake-donuts" min="0" required placeholder="Enter number of cake donuts">
+
+                        <br><label>Number of baked donuts:</label><br>
+                        <input type="text" id="baked-donuts" min="0" required
+                            placeholder="Enter number of baked donuts">
+
+                        <br><label>Number of minutes:</label><br>
+                        <input type="number" id="minutes" required disabled>
+
+                        <br><label>Subtotal:</label><br>
+                        <input type="text" id="subtotal" disabled>
+
+                        <br><label>Tax:</label><br>
+                        <input type="text" id="tax" disabled>
+
+                        <br><label>Total:</label><br>
+                        <input type="text" id="total" disabled>
+
+                        <br><input type="submit" value="Calculate"><br>
+                        <button class="button" onclick="next()"> Place Order
+                        </button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="pet.js"></script>
+
+</body>
+
+</html>
